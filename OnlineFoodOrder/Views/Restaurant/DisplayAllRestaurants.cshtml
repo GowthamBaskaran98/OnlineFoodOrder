@@ -1,0 +1,22 @@
+﻿@model List<OnlineFoodOrder.Models.RestaurantViewModel>
+
+<table>
+    <tr>
+        <th>Restaurant Name</th>
+        <th>Mobile Number</th>
+        <th>Address</th>
+        <th>Food Type</th>
+        <th>State</th>
+    </tr>
+
+    @foreach (OnlineFoodOrder.Models.RestaurantViewModel restaurant in Model)
+    {
+        <tr>
+            <td>@restaurant.RestaurantName</td>
+            <td>@restaurant.MobileNumber</td>
+            <td>@restaurant.Address</td>
+            <td>@restaurant.FoodType</td>
+            <td>@restaurant.State</td>
+        </tr>
+    }
+</table>
